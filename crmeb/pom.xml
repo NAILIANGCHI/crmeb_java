@@ -28,6 +28,8 @@
         <swagger-bootstrap-ui.version>1.9.3</swagger-bootstrap-ui.version>
 <!--        兼容个别 mav 环境 GBK问题-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<!--        docker 配置-->
+        <docker.host>http://localhost</docker.host>
     </properties>
 
     <!-- 依赖声明 -->
@@ -330,6 +332,61 @@
                     <!-- <failOnMissingWebXml>false</failOnMissingWebXml> -->
                 </configuration>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>docker-maven-plugin</artifactId>-->
+<!--                <version>0.4.13</version>-->
+<!--                <configuration>-->
+<!--                    <dockerHost>${docker.host}</dockerHost>-->
+<!--                    <images>-->
+<!--                        <image>-->
+<!--                            <imageName>naraci/${project.name}:${project.version}</imageName>-->
+<!--                            &lt;!&ndash;定义镜像名称&ndash;&gt;-->
+<!--                            <build>-->
+<!--                                <from>openjdk:8</from>-->
+<!--                                <args>-->
+<!--                                    <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>-->
+<!--                                </args>-->
+<!--                                <assembly>-->
+<!--                                    <targetDir>/</targetDir>-->
+<!--                                    <descriptorRef>artifact</descriptorRef>-->
+<!--                                </assembly>-->
+<!--                            </build>-->
+<!--                        </image>-->
+<!--                    </images>-->
+<!--                    &lt;!&ndash; 使用的镜像的名称 &ndash;&gt;-->
+<!--                    <baseImage>jdk1.8</baseImage>-->
+<!--                    &lt;!&ndash; 在镜像中执行的命令，即启动springboot项目 &ndash;&gt;-->
+<!--                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>-->
+<!--                    <resources>-->
+<!--                        <resource>-->
+<!--                            <targetPath>/</targetPath>-->
+<!--                            <directory>${project.build.directory}</directory>-->
+<!--                            <include>${project.build.finalName}.jar</include>-->
+<!--                        </resource>-->
+<!--                    </resources>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>docker-maven-plugin</artifactId>-->
+<!--                <version>1.2.2</version>-->
+<!--                <configuration>-->
+<!--                    <dockerHost>${docker.host}</dockerHost>-->
+<!--                    <baseImage>adoptopenjdk/openjdk8:latest</baseImage>-->
+<!--                    <imageName>${project.artifactId}:${project.version}</imageName>-->
+<!--                    <cmd>["java", "-jar", "/root/${project.build.finalName}.jar"]</cmd>-->
+<!--                    <resources>-->
+<!--                        <resource>-->
+<!--                            <targetPath>/root</targetPath>-->
+<!--                            <directory>${project.build.directory}</directory>-->
+<!--                            <include>${project.build.finalName}.jar</include>-->
+<!--                        </resource>-->
+<!--                    </resources>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 

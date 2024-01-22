@@ -80,16 +80,16 @@ const maintainRouter = {
       },
       hidden: false
     },
-    {
-      path: 'authCRMEB',
-      name: 'authCRMEB',
-      component: () => import('@/views/maintain/authCRMEB'),
-      meta: {
-        title: '授权',
-        icon: 'clipboard'
-      },
-      hidden: false
-    },//sensitiveList
+    // {
+    //   path: 'authCRMEB',
+    //   name: 'authCRMEB',
+    //   component: () => import('@/views/maintain/authCRMEB'),
+    //   meta: {
+    //     title: '授权',
+    //     icon: 'clipboard'
+    //   },
+    //   hidden: false
+    // },//sensitiveList
     {
       path: 'logistics',
       name: 'Logistics',

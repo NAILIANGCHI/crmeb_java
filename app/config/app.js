@@ -1,19 +1,21 @@
 
-let domain = 'http://127.0.0.1:8081'
+// let domain = 'http://192.168.0.101:8082'
+let domain = 'http://112.124.65.228:8082'
 
 module.exports = {
 	// 请求域名 格式： https://您的域名
 	// #ifdef MP
 		HTTP_REQUEST_URL: domain,
 	// #endif
-	HTTP_ADMIN_URL:'http://127.0.0.1:8080', //PC后台的API请求地址，上传图片用
+	// HTTP_ADMIN_URL:'http://192.168.1.16:8086', //PC后台的API请求地址，上传图片用
+	HTTP_ADMIN_URL:'http://112.124.65.228:8086', //PC后台的API请求地址，上传图片用
 	// #ifdef H5
 		//H5接口是浏览器地址
 		// HTTP_REQUEST_URL: window.location.protocol+"//"+window.location.host,
 		// http://api.java.crmeb.net:20001
 		HTTP_REQUEST_URL:domain,
 	// #endif
-	
+
 	HEADER:{
 		'content-type': 'application/json'
 	},

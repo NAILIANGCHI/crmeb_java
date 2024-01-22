@@ -12,7 +12,7 @@
         <settings />
       </right-panel>
     </div>
-    <div class="open-image" @click="clear" v-if="openImage"><img src="@/assets/imgs/pc1.png" alt=""></div>
+<!--    <div class="open-image" @click="clear" v-if="openImage"><img src="@/assets/pc12.png" alt=""></div>-->
   </div>
 </template>
 

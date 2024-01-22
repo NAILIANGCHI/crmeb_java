@@ -269,7 +269,7 @@
 					"style": {
 						"navigationBarTitleText": "修改密码",
 						"navigationBarBackgroundColor": "#e93323"
-							// #ifdef MP 
+							// #ifdef MP
 							,
 						"navigationBarTextStyle": "#fff"
 							// #endif
@@ -314,7 +314,7 @@
 					"style": {
 						"navigationBarTitleText": "推广人排行",
 						"navigationBarBackgroundColor": "#e93323"
-							// #ifdef MP 
+							// #ifdef MP
 							,
 						"navigationBarTextStyle": "#fff"
 							// #endif
@@ -385,6 +385,14 @@
 					"style": {
 						"navigationBarTitleText": "绑定手机号",
 						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path" : "app_register/index",
+					"style" :
+					{
+						"navigationBarTitleText" : "",
+						"enablePullDownRefresh" : false
 					}
 				}
 			]
