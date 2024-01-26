@@ -148,10 +148,9 @@ WEBPC管理端：https://admin.java.crmeb.net<br>
 
 
 ---
-### 📲 CRMEB互动
-#### 技术娱乐
-代码写累了？那就歇会吧！扫码让你开心一刻！
-![](crmeb/crmebimage/crmebimage/demoimage/crmebdouyin.jpg)
+### 📲 CRMEB开源技术交流群
+扫码进群可领取开源版接口文档、产品功能清单、高清UI设计图、思维脑图！
+![](crmeb/crmebimage/crmebimage/demoimage/wellcomJavaGroup.jpg)
 
 
 #### 📈 技术社区
@@ -173,13 +172,15 @@ CRMEB JAVA 技术交流QQ群 3群 640230510 🈵️ 群已满<br>
 ### 💌 特别鸣谢
 核心开发团队
 
-产品：木子刀客
+产品: 木子刀客
 
-技术：❄指缝de阳光，怪兽的猫，大粽子，乡关何处
+技术: ❄指缝de阳光, 怪兽的猫, 乡关何处
 
-UI：被子横盖显得高🐰
+团队打杂: 大粽子
 
-测试：请叫我绵绵🐏
+UI: 被子横盖显得高🐰
+
+测试: 请叫我绵绵🐏, 夏天
 
 ---
 
